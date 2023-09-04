@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Ways Pass</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Password Manager</h1>
+        <p>Hey there!
+
+            Welcome to your password manager Ways! We're stoked to see you here. 😊
+            
+            Managing passwords can be a real headache, but don't worry, we've got your back. Our mission is to make your online life simpler and more secure.
+            
+            Take your time to explore our features. We've designed everything with you in mind – from easy password storage to lightning-fast access when you need it most.
+            
+            And hey, if you ever have questions or just want to chat, we're here for you. Just drop us a line, and we'll get back to you faster than you can say "password."
+            
+            Thanks for trusting us with your online security. Together, we'll lock down your digital world.
+            
+            Cheers to safer, stress-free browsing!</p>
+        <h2>Your Passwords <span id="alert">(Copied!)</span></h2> 
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr> 
+ 
+        </table>
+
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+
+            <!-- Text input for website -->
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <!-- Submit button -->
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
